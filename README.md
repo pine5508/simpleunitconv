@@ -1,2 +1,2 @@
-# simplecalc
-A simple calculator interface for my APCSP project, made with Python
+# simpleunitconv
+A simple unit converter interface for my APCSP project, made with Python
