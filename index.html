@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="application-name" content="Simple Unit Converter">
+        <meta name="theme-color" content="#000">
+        <link href="style.css" rel="stylesheet" />
+        <title>Unit Converter</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Unit Converter</h1>
+            <p>A simple unit converter. Enjoy!</p>
+            <div class="form">
+                <form action="" autocomplete="off">
+                    <div class="wrapper"><div class="form-8bit"><div class="form-8bit-wrapper"><input class="form-component input light-dark" type="text" name="input" id="input" placeholder="Type number here."></div></div></div>
+                    <div class="wrapper"><div class="form-8bit"><div class="form-8bit-wrapper"><input class="form-component input light-dark" type="text" name="num" id="num" placeholder="Number will appear here." onchange="outputfinder(this.value)"></div></div></div>
+                    <div class="wrapper"><div class="form-8bit"><div class="form-8bit-wrapper"><div class="form-component button" onclick="generate(document.getElementById('num').value, document.getElementById('input').value, 'result')">Calculate</div></div></div></div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container">
+
+        </div>
+    </body>
+</html>
