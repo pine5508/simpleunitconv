@@ -4,25 +4,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="application-name" content="Simple Unit Converter">
-        <meta name="theme-color" content="#000">
-        <link href="style.css" rel="stylesheet" />
+        <meta name="theme-color" content="#fff">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
+        <link href="style.css" rel="stylesheet"></link>
         <title>Unit Converter</title>
     </head>
     <body>
-        <div class="container">
-            <h1>Unit Converter</h1>
-            <p>A simple unit converter. Enjoy!</p>
-            <div class="form">
-                <form action="" autocomplete="off">
-                    <div class="wrapper"><div class="form-8bit"><div class="form-8bit-wrapper"><input class="form-component input light-dark" type="text" name="input" id="input" placeholder="Type number here."></div></div></div>
-                    <div class="wrapper"><div class="form-8bit"><div class="form-8bit-wrapper"><input class="form-component input light-dark" type="text" name="num" id="num" placeholder="Number will appear here." onchange="outputfinder(this.value)"></div></div></div>
-                    <div class="wrapper"><div class="form-8bit"><div class="form-8bit-wrapper"><div class="form-component button" onclick="generate(document.getElementById('num').value, document.getElementById('input').value, 'result')">Calculate</div></div></div></div>
-                </form>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand">Simple Unit Converter</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Length<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Speed</a>
+                    <a class="nav-item nav-link" href="#">Temperature</a>
+                    <a class="nav-item nav-link" href="#">Area</a>
+                    <a class="nav-item nav-link" href="#">Volume</a>
+                    <a class="nav-item nav-link" href="#">Weight</a>
+                    <a class="nav-item nav-link" href="#">Time</a>
+                </div>
+              </div>
+        </nav>
+        <form class="container-sm text-center" autocomplete="off">
+            <div class="form-group">
+                <input type="number" class="form-control" id="numInput" placeholder="Input any number here...">
             </div>
-        </div>
-
-        <div class="container">
-
-        </div>
+        </form>
+    
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>
