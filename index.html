@@ -10,9 +10,9 @@
         <title>Unit Converter</title>
     </head>
     <body>
+        <script src="script.js"></script>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand">Simple Unit Converter</a>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="#">Length<span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#">Speed</a>
@@ -22,14 +22,47 @@
                     <a class="nav-item nav-link" href="#">Weight</a>
                     <a class="nav-item nav-link" href="#">Time</a>
                 </div>
-              </div>
         </nav>
-        <form class="container-sm text-center" autocomplete="off">
-            <div class="form-group">
-                <input type="number" class="form-control" id="numInput" placeholder="Input any number here...">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form autocomplete="off">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="numInput" placeholder="Input any number here...">
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <select id="lengthUnit">
+                        <option value="m">meter</option>
+                        <option value="km">kilometer</option>
+                        <option value="cm">centimeter</option>
+                        <option value="mi">mile</option>
+                    </select>
+
+                    <!--
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Choose a unit...
+                        </button>
+                        <select class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <option class="dropdown-item">meter</option>>
+                            <option class="dropdown-item">kilometer</option>>
+                            <option class="dropdown-item">centimeter</option>>
+                            <option class="dropdown-item">mile</option>>
+                            <option class="dropdown-item">yard</option>>
+                            <option class="dropdown-item">foot</option>>
+                            <option class="dropdown-item">inch</option>>
+                        </select>
+                    </div>
+                    -->
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-success">Calculate!</button>
+                </div>
             </div>
-        </form>
-    
+        </div>
+
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
