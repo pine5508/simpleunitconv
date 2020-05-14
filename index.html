@@ -10,18 +10,35 @@
         <title>Unit Converter</title>
     </head>
     <body>
-        <script src="script.js"></script>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand">Simple Unit Converter</a>
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Length<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Speed</a>
-                    <a class="nav-item nav-link" href="#">Temperature</a>
-                    <a class="nav-item nav-link" href="#">Area</a>
-                    <a class="nav-item nav-link" href="#">Volume</a>
-                    <a class="nav-item nav-link" href="#">Weight</a>
-                    <a class="nav-item nav-link" href="#">Time</a>
-                </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Length<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Speed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Temperature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Area</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Volume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Weight</a>
+                    </li>
+
+                </ul>
+              </div>
         </nav>
         <div class="container">
             <div class="row">
@@ -32,37 +49,29 @@
                         </div>
                     </form>
                 </div>
-                <div class="col">
-                    <select id="lengthUnit">
+                <div class="col-md-auto">
+                    <select id="lengthUnit" class="btn btn-secondary dropdown-toggle">
                         <option value="m">meter</option>
                         <option value="km">kilometer</option>
                         <option value="cm">centimeter</option>
                         <option value="mi">mile</option>
+                        <option value="yd">yard</option>
+                        <option value="ft">foot</option>
+                        <option value="in">inch</option>
                     </select>
-
-                    <!--
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Choose a unit...
-                        </button>
-                        <select class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <option class="dropdown-item">meter</option>>
-                            <option class="dropdown-item">kilometer</option>>
-                            <option class="dropdown-item">centimeter</option>>
-                            <option class="dropdown-item">mile</option>>
-                            <option class="dropdown-item">yard</option>>
-                            <option class="dropdown-item">foot</option>>
-                            <option class="dropdown-item">inch</option>>
-                        </select>
-                    </div>
-                    -->
                 </div>
-                <div class="col">
+                <div class="col col-lg-2">
                     <button type="button" class="btn btn-success">Calculate!</button>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
 
+        <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
