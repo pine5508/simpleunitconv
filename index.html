@@ -45,12 +45,12 @@
                 <div class="col">
                     <form autocomplete="off">
                         <div class="form-group">
-                            <input type="number" class="form-control" id="numInput" placeholder="Input any number here...">
+                            <input type="number" class="form-control" id="input" placeholder="Input any number here...">
                         </div>
                     </form>
                 </div>
                 <div class="col-md-auto">
-                    <select id="lengthUnit" class="btn btn-secondary dropdown-toggle">
+                    <select id="unit" class="btn btn-secondary dropdown-toggle">
                         <option value="m">meter</option>
                         <option value="km">kilometer</option>
                         <option value="cm">centimeter</option>
@@ -61,7 +61,7 @@
                     </select>
                 </div>
                 <div class="col col-lg-2">
-                    <button type="button" class="btn btn-success">Calculate!</button>
+                    <button type="submit" class="btn btn-success" onclick="calculate()">Calculate!</button>
                 </div>
             </div>
         </div>
