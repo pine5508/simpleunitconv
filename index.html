@@ -43,23 +43,30 @@
         <div class="container">
             <div class="row">
                 <div class="col">
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                        This will convert any length value to meters, kilometers, miles and feet.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
                     <form autocomplete="off">
                         <div class="form-group">
-                            <input type="number" class="form-control" id="input" placeholder="km to ..">
+                            <input type="number" class="form-control" id="input" placeholder="Input number here..">
                         </div>
                     </form>
                 </div>
                 <div class="col-md-auto">
-                    <select id="unit" class="btn btn-secondary dropdown-toggle">
-                        <option value="meters">meter</option>
-                        <option value="centimeters">centimeter</option>
-                        <option value="miles">mile</option>
-                        <option value="yards">yard</option>
-                        <option value="feet">foot</option>
-                        <option value="inches">inch</option>
+                    <select id="unit" class="btn btn-primary dropdown-toggle">
+                        <option value="km">kilometer</option>
+                        <option value="mi">mile</option>
+                        <option value="ft">foot</option>
                     </select>
                 </div>
-                <div class="col col-lg-2">
+                <div class="col-md-auto">
                     <button type="submit" class="btn btn-success" onclick="calculate()">Calculate!</button>
                 </div>
             </div>
