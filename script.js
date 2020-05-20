@@ -11,20 +11,20 @@ function submit() {
 }
 
 function calculate() {
-    if (unit = "km") {
+    if (unit == "km") {
         document.getElementById("kmOutput").value = input
         kmTOmi()
         kmTOft()
-    } else
-    if (unit = "mi") {
-        document.getElementById("miOutput").value = input
+    }
+    else if (unit == "mi") {
         miTOkm()
+        document.getElementById("miOutput").value = input
         miTOft()
-    } else
-    if (unit = "ft") {
-        document.getElementById("ftOutput").value = input
+    }
+    else if (unit == "ft") {
         ftTOkm()
         ftTOmi()
+        document.getElementById("ftOutput").value = input
     }
     else {
         alert("Invalid unit!")
